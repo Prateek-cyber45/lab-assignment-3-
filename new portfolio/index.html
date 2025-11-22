@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio - Prateek Pandey</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">My <span>Portfolio</span></div>
+
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#hero">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero">
+    <div class="container hero-flex">
+      <div class="hero-left fade-in-up">
+        <p class="hero-hi">Hi, I am</p>
+        <h1 class="hero-title">
+          <span class="hero-title-main">Full Stack Developer</span>
+        </h1>
+        <p class="hero-subtext">
+          Building modern web applications with MERN stack.
+        </p>
+      </div>
+
+      <div class="hero-right fade-in-up">
+        <div class="hero-circle">
+          <div class="avatar">
+            <div class="avatar-head"></div>
+            <div class="avatar-body"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h2 class="section-heading">About Me</h2>
+      <p class="section-text">
+        Hello! My name is <strong>Prateek Pandey</strong>, and I am currently learning
+        web development. This is my first portfolio website where I showcase my passion
+        for creating interactive and responsive web pages. I am a B.Tech CSE student
+        and I am deeply interested in technology and coding. I enjoy exploring new skills
+        every day and always aim to improve my knowledge in the field of web development.
+        With a hardworking and consistent mindset, I am determined to grow as a developer
+        and build creative projects that make a real impact.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h2 class="section-heading">My Skills</h2>
+
+      <div class="skills-grid">
+        <article class="skill-card">
+          <h3>HTML</h3>
+          <p>Beginner</p>
+        </article>
+
+        <article class="skill-card">
+          <h3>CSS</h3>
+          <p>Beginner</p>
+        </article>
+
+        <article class="skill-card">
+          <h3>JavaScript</h3>
+          <p>Learning</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <h2 class="section-heading">My Projects</h2>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Project 1</h3>
+          <p>A simple HTML &amp; CSS webpage.</p>
+        </article>
+
+        <article class="project-card">
+          <h3>Project 2</h3>
+          <p>Another awesome mini project.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <h2 class="section-heading">Contact Me</h2>
+
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Enter your name" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="Enter your email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" rows="4" placeholder="Write your message" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Prateek Pandey. All rights reserved.</p>
+      <a href="#hero" class="back-to-top">↑ Back to Top</a>
+    </div>
+  </footer>
+
+  <!-- Simple mobile nav toggle -->
+  <script>
+    const navToggle = document.querySelector(".nav-toggle");
+    const nav = document.querySelector(".main-nav");
+
+    navToggle.addEventListener("click", () => {
+      nav.classList.toggle("nav-open");
+    });
+  </script>
+</body>
+</html>
